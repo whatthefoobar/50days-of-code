@@ -35,22 +35,25 @@ body {
   transition: flex 0.7s ease-in;
 }
 
-.panel h3 {
+.panel .panel-text {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   left: 20px;
-  font-size: 24px;
   padding: 10px;
-  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50px;
   opacity: 0; /*only show when card slides open*/
 }
+.panel .panel-text h3 {
+  font-size: 24px;
+}
+
 .panel.active {
   flex: 5;
 }
-.panel.active h3 {
+.panel.active .panel-text {
   opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s; /**fix the jump effect of the opacity/
+  transition: opacity 0.3s ease-in 0.4s; /*fix the jump effect of the opacity*/
 }
 @media (max-width: 480px) {
   .container {
