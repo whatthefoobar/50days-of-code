@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+}
+.pannel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  /*width*/
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.pannel h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 24px;
+  padding: 10px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border-radius: 50px;
+  opacity: 0; /*only show when card slides open*/
+}
+.pannel.active {
+  flex: 5;
+}
+.pannel.active h3 {
+  opacity: 1;
+}
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .pannel:nth-of-type(4),
+  .pannel:nth-of-type(5) {
+    display: none;
+  } /*remove last 2 collapsed cards if screen small*/
+} ;
