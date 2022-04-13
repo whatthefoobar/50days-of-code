@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+} */
+
+.about {
+  width: 100%;
+  padding: 78px 0px;
+  background-color: #191919;
+  height: 100vh;
+}
+.about img {
+  margin-top: 0;
+  height: auto;
+  width: 320px;
+}
+.about-text {
+  color: white;
+  width: 550px;
+}
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h1 {
+  color: white;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+.about-text h5 {
+  text-transform: capitalize;
+  font-size: 25px;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+span {
+  color: rgb(230, 230, 71);
+}
+.about-text p {
+  color: #fcfcfc;
+  letter-spacing: 1px;
+  line-height: 26px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+button {
+  background: rgb(230, 230, 71);
+  color: #333;
+  text-decoration: none;
+  order: 2px solid transparent;
+  padding: 13px 30px;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+button:hover {
+  background: transparent;
+  border: 2px solid rgb(230, 230, 71);
+  cursor: pointer;
+  color: white;
+}
