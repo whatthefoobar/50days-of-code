@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg {
+  background: url('./img/img.jpeg') no-repeat center center/cover;
+  position: absolute;
+  top: -30px; /*instead of 0 to fix the high blur corners*/
+  left: -30px; /*instead of 0 to fix the high blur corners*/
+  width: calc(100vw + 60px); /*instead of 100vw to fix the high blur corners*/
+  height: calc(100vh + 60px);
+  z-index: -1; /*behind the 0%*/
+  filter: blur(0px); /* 30px is max blurriness*/
+}
+.loading-text {
+  font-size: 50px;
+  color: white;
+}
