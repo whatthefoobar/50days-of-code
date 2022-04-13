@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+:root {
+  --line-border-fill: #3498db;
+  --line-border-empty: #a39a9a;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  /* background-color: #534d4d; */
+  background-color: #534d4d;
   color: rgb(67, 84, 190);
   font-family: 'Urbanist', sans-serif;
   display: flex;
@@ -28,7 +32,7 @@ body {
 }
 .progress-container::before {
   content: '';
-  background-color: #a39a9a;
+  background-color: var(--line-border-empty);
   position: absolute;
   top: 50%;
   left: 0;
@@ -39,7 +43,7 @@ body {
 }
 
 .progress {
-  background-color: #3498db;
+  background-color: var(--line-border-fill);
   position: absolute;
   top: 50%;
   left: 0;
@@ -48,4 +52,40 @@ body {
   width: 0%;
   z-index: -1;
   transition: 0.4s ease;
+}
+.circle {
+  background-color: #fff;
+  color: #333;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--line-border-empty);
+  transition: 0.4 ease;
+}
+.circle.active {
+  border-color: var(--line-border-fill);
+}
+.btn {
+  background-color: var(--line-border-fill);
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:focus {
+  outline: 0;
+}
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
 }
