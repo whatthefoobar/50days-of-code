@@ -3,7 +3,7 @@
 50 days 50 HTML/CSS/JS projects
 
 1. http://50projects-project-1.netlify.app
-2. http://https://50projects-project-2.netlify.app
+2. http://50projects-project-2.netlify.app
 3. http://50projects-project-3.netlify.app
 4. http://50projects-project-4.netlify.app
 5. http://50projects-project-5.netlify.app
