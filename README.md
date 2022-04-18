@@ -14,3 +14,5 @@
 10. http://50projects-project-10.netlify.app
 11. http://50projects-project-11.netlify.app
 12. http://50projects-project-12.netlify.app
+13. http://50projects-project-13.netlify.app
+14. http://50projects-project-14.netlify.app
