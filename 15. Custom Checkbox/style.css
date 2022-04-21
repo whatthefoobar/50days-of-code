@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  margin: 25vh auto;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+.checkbox-container label {
+  cursor: pointer;
+  display: flex;
+}
+/* first "erase " our checkboxes */
+
+.checkbox-container input[type='checkbox'] {
+  cursor: pointer;
+  opacity: 0; /*instead of display: none; so that screen readers can still pick it up */
+  position: absolute; /*boxes are now on top of the text label*/
+}
+/* create new checkbox icon */
+.checkbox-container label::before {
+  content: '';
+  width: 1em;
+  height: 1em;
+  border-radius: 0.15em;
+  margin-right: 0.5em;
+  border: 0.05em solid black;
+}
+/* for this we need our label to be after or checkbox to get this hover effect */
+.checkbox-container label:hover::before,
+.checkbox-container input[type='checkbox']:hover + label::before {
+  background-color: #35e07d;
+}
+
+.checkbox-container input[type='checkbox']:focus + label::before {
+  box-shadow: 0 0 20px black;
+}
+
+.checkbox-container input[type='checkbox']:checked + label::before {
+  content: '\002714';
+  background-color: #27ae60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
