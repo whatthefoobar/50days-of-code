@@ -16,3 +16,10 @@
 12. http://50projects-project-12.netlify.app
 13. http://50projects-project-13.netlify.app
 14. http://50projects-project-14.netlify.app
+15. http://50projects-project-15.netlify.app
+16. http://50projects-project-16.netlify.app
+17. http://50projects-project-17.netlify.app
+18. http://50projects-project-18.netlify.app
+19. http://50projects-project-19.netlify.app
+20. http://50projects-project-20.netlify.app
+21. http://50projects-project-21.netlify.app
