@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  user-select: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #a69cac;
+}
+.inputBox {
+  position: absolute;
+  width: 450px;
+}
+.inputBox h2 {
+  font-size: 28px;
+  color: #141850;
+}
+span {
+  color: #f1dac4;
+
+  text-shadow: 1px 1px #141850;
+}
+::placeholder {
+  color: #f5cac2;
+}
+.inputBox input {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border: none;
+  margin: 15px 0 10px;
+  background-color: whitesmoke;
+  outline: none;
+  padding: 0 20px;
+  font-size: 24px;
+  letter-spacing: 4px;
+  border-radius: 8px;
+  color: #141850;
+  box-shadow: 4px 3px 16px 2px rgba(0, 0, 0, 0.6);
+}
+.inputBox input::placeholder {
+  letter-spacing: 0;
+}
+button {
+  position: relative;
+  cursor: pointer;
+  color: #fae5df;
+  background-color: #474973;
+  border: none;
+  font-size: 24px;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.inputBox #btn:active {
+  background-color: #141850;
+  transform: scale(0.98);
+}
