@@ -27,7 +27,7 @@ body {
   opacity: 0.8;
 }
 .header {
-  background-color: #3e57db;
+  background-color: #4539c4;
   color: #fff;
   padding: 30px 20px;
 }
@@ -67,4 +67,10 @@ body {
 }
 .user-list .user-info p {
   font-size: 12px;
+}
+.user-list li:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.user-list li.hide {
+  display: none;
 }
