@@ -8,9 +8,24 @@
 body {
   font-family: 'Roboto', sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #99948c;
+}
+.container {
   overflow: hidden;
+  background-color: #171715;
+  cursor: ew-resize;
+  white-space: nowrap;
+  padding: 10vh 0;
+}
+.title {
+  font-size: 10vw;
+  position: relative;
+  color: #99948c;
+  display: inline-block;
+  margin: 0;
+  padding: 0 10%;
+  will-change: transform;
 }
