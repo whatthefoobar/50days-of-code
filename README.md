@@ -33,3 +33,12 @@
 29. http://50projects-project-29.netlify.app
 30. http://50projects-project-30.netlify.app
 31. https://50projects-project-31.netlify.app/
+32. https://50projects-project-32.netlify.app/
+33. https://50projects-project-33.netlify.app/
+34. https://50projects-project-34.netlify.app/
+35. https://50projects-project-35.netlify.app/
+36. https://50projects-project-36.netlify.app/
+37. https://50projects-project-37.netlify.app/
+38. https://50projects-project-38.netlify.app/
+39. https://50projects-project-39.netlify.app/
+40. https://50projects-project-41.netlify.app/
