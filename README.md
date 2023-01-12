@@ -41,4 +41,7 @@
 37. https://50projects-project-37.netlify.app/
 38. https://50projects-project-38.netlify.app/
 39. https://50projects-project-39.netlify.app/
-40. https://50projects-project-41.netlify.app/
+40. https://50projects-project-40.netlify.app/
+41. https://50projects-project-41.netlify.app/
+42. https://50projects-project-42.netlify.app/
+
